@@ -1,0 +1,27 @@
+Package: paredBasic3
+Title: Model Selection via Multi-Objective GP-Based Pareto Front Calculation
+Version: 0.1.0
+Authors@R: c(
+    person("Priyam", "Das", email = "dasp4@vcu.edu", 
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-2384-0486")),
+    person("Christine", "Peterson", email = "CBPeterson@mdanderson.org", 
+           role = "aut",
+           comment = c(ORCID = "0000-0003-3316-0468")))
+Description: Provides utilities for Pareto-optimal tuning of regularized regression models such as Joint Graphical Lasso, Fused Lasso, and Elastic-Net using Gaussian Process-based optimization via the 'GPareto' package. Includes tools for visualizing trade-offs between model complexity (sparsity), coefficient magnitude, and goodness-of-fit in 3D space using 'plotly'. Useful for model selection scenarios involving competing objectives and visual exploration of optimal solutions.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Imports:
+    GPareto,
+    JGL,
+    dplyr,
+    psych,
+    mvtnorm,
+    plotly,
+    htmlwidgets,
+    glmnet,
+    RMPSH,
+    MASS,
+    glmnet
